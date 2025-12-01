@@ -177,12 +177,17 @@ async def get_price_analysis(
 
 if __name__ == "__main__":
     import uvicorn
+    
+    # Get port from environment (Render uses PORT env var)
+    port = int(os.getenv("PORT", 8000))
+    
     print("=" * 70)
     print("Starting Amadeus Flight API Test Server")
     print("=" * 70)
-    print(f"   URL: http://localhost:8000")
-    print(f"   Docs: http://localhost:8000/docs")
+    print(f"   Port: {port}")
+    print(f"   Docs: /docs")
     print(f"   Amadeus Environment: {os.getenv('AMADEUS_ENVIRONMENT', 'test')}")
+    print(f"   API Key configured: {'Yes' if os.getenv('AMADEUS_API_KEY') else 'No'}")
     print("=" * 70)
-    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
+    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
 
