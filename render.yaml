@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: skyprice-flight-engine
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && python test_server.py
+    envVars:
+      - key: AMADEUS_API_KEY
+        value: 7ILzFgbUvrxpujGoZk9oG0zTvjWGjD5m
+      - key: AMADEUS_API_SECRET
+        value: VD4AF5SbxMshZnwF
+      - key: AMADEUS_ENVIRONMENT
+        value: test
+      - key: PORT
+        sync: false
