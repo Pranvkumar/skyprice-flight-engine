@@ -1,6 +1,8 @@
 # Flight & Travel Price Recommendation Engine
 **Project 17: Pranav (590011587), Om (590014492)**
 
+🌐 **Live Demo:** [https://skyprice-flight-engine.onrender.com](https://skyprice-flight-engine.onrender.com)
+
 ## 🚀 Overview
 A production-grade, scalable Price Recommendation Engine for flight and travel bookings using **Divide-and-Conquer Forecasting** principles. Built with FastAPI backend and React frontend for real-time dynamic pricing.
 
