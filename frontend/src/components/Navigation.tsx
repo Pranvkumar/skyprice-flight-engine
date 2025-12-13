@@ -26,15 +26,11 @@ import {
   Search,
   TrendingUp,
   CardGiftcard,
-  BookOnline,
-  Dashboard,
-  Analytics,
-  AccountCircle,
   Notifications,
   DirectionsBus,
   Hotel,
   Train,
-  Sparkles,
+  Analytics,
 } from '@mui/icons-material';
 
 const Navigation = () => {

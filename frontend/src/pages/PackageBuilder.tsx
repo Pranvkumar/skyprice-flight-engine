@@ -153,7 +153,7 @@ const PackageBuilder: React.FC = () => {
                   </Typography>
 
                   <Box sx={{ my: 3 }}>
-                    <Chip label={`${pkg.discount}% OFF`} color="success" size="large" icon={<Savings />} />
+                    <Chip label={`${pkg.discount}% OFF`} color="success" size="medium" icon={<Savings />} />
                   </Box>
 
                   <Stack spacing={1} sx={{ mb: 3 }}>
